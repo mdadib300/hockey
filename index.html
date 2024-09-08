@@ -124,30 +124,104 @@
                     <input type="radio" name="my-accordion-3" checked="checked" />
                     <div class="collapse-title text-xl font-medium">How can I purchase tickets for the next game?</div>
                     <div class="collapse-content">
-                        <p>You can buy tickets directly from our website’s ticketing page or through authorized sellers listed on our site.</p>
+                        <p>You can buy tickets directly from our website’s ticketing page or through authorized sellers
+                            listed on our site.</p>
                     </div>
                 </div>
                 <div class="collapse collapse-plus bg-base-200 mb-2">
                     <input type="radio" name="my-accordion-3" />
                     <div class="collapse-title text-xl font-medium">What should I do if I lost my game-day pass?</div>
                     <div class="collapse-content">
-                        <p>Please contact our customer support team immediately for assistance with a replacement pass.</p>
+                        <p>Please contact our customer support team immediately for assistance with a replacement pass.
+                        </p>
                     </div>
                 </div>
                 <div class="collapse collapse-plus bg-base-200 mb-2">
                     <input type="radio" name="my-accordion-3" />
-                    <div class="collapse-title text-xl font-medium">Where can I find information about team schedules and player stats?</div>
+                    <div class="collapse-title text-xl font-medium">Where can I find information about team schedules
+                        and player stats?</div>
                     <div class="collapse-content">
-                        <p>All team schedules and player statistics are available on our website under the “Schedule” and “Players” sections.</p>
+                        <p>All team schedules and player statistics are available on our website under the “Schedule”
+                            and “Players” sections.</p>
                     </div>
                 </div>
                 <div class="collapse collapse-plus bg-base-200 mb-2">
                     <input type="radio" name="my-accordion-3" />
-                    <div class="collapse-title text-xl font-medium">How can I get involved with the team or become a volunteer?</div>
+                    <div class="collapse-title text-xl font-medium">How can I get involved with the team or become a
+                        volunteer?</div>
                     <div class="collapse-content">
-                        <p>Visit our “Get Involved” page for details on volunteering opportunities and how to support the team.</p>
+                        <p>Visit our “Get Involved” page for details on volunteering opportunities and how to support
+                            the team.</p>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Get in touch -->
+    <section class="contact my-6 lg:my-20 mx-4 lg:mx-24">
+        <div class="text-center mb-6 lg:mb-10">
+            <h1 class="text-2xl lg:text-3xl font-bold">Get In Touch</h1>
+            <p class="my-2">Get our contact information and leave yours to get all the updates of us.</p>
+        </div>
+        <div class="lg:flex items-center justify-center">
+            <div class="lg:w-1/3 lg:mr-20">
+                <div class="rounded-md bg-red-100 p-4 m-4">
+                    <img class="mb-4" src="assets/call.png" alt="">
+                    <p>Phone number:</p>
+                    <p><strong>+880 12 34 56 78</strong></p>
+                </div>
+                <div class="rounded-md bg-green-100 p-4 m-4">
+                    <img class="mb-4" src="assets/msg.png" alt="">
+                    <p>Email address:</p>
+                    <p><strong>random@gmail.com</strong></p>
+                </div>
+                <div class="rounded-md bg-blue-100 p-4 m-4">
+                    <img class="mb-4" src="assets/location.png" alt="">
+                    <p>Location:</p>
+                    <p><strong>Dhaka, Bangladesh</strong></p>
+                </div>
+            </div>
+            <div class="grid place-items-center">
+                <div class="lg:flex">
+                    <div class="lg:mr-6">
+                        <p class="mb-2"><b>Your name:</b></p>
+                        <input type="text" placeholder="Type here" class="input input-bordered w-full max-w-xs" />
+                    </div>
+                    <div>
+                        <p class="mb-2"><b>Your Email:</b></p>
+                        <input type="text" placeholder="Type here" class="input input-bordered w-full max-w-xs" />
+                    </div>
+                </div>
+                <div class="lg:flex lg:mt-6">
+                    <div class="lg:mr-6">
+                        <p class="mb-2"><b>Subject:</b></p>
+                        <input type="text" placeholder="Type here" class="input input-bordered w-full max-w-xs" />
+                    </div>
+                    <div>
+                        <p class="mb-2"><b>Phone Number:</b></p>
+                        <input type="text" placeholder="Type here" class="input input-bordered w-full max-w-xs" />
+                    </div>
+                </div>
+                <div class="lg:mt-6">
+                    <p class="mb-2"><b>Your message:</b></p>
+                    <textarea placeholder="Type here"
+                        class="textarea textarea-bordered textarea-lg w-full max-w-xs"></textarea>
+                </div>
+                <!-- Open the modal using ID.showModal() method -->
+                <button class="btn btn-wide btn-error mt-6" onclick="my_modal_1.showModal()">Submit</button>
+                <dialog id="my_modal_1" class="modal">
+                    <div class="modal-box">
+                        <h3 class="text-lg font-bold">Submitted!</h3>
+                        <p class="py-4">Thanks for your message.</p>
+                        <div class="modal-action">
+                            <form method="dialog">
+                                <!-- if there is a button in form, it will close the modal -->
+                                <button class="btn">Close</button>
+                            </form>
+                        </div>
+                    </div>
+                </dialog>
             </div>
         </div>
     </section>
